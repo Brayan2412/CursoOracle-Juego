@@ -1,5 +1,5 @@
 import {pantalla,pincel,dibujarHorca} from '../JavaScript/dibujar.js';
-let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS"];
+let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS","FRONTEND","BACKEND","JAVA"];
 let content_inicio = document.querySelector(".content-inicio");
 let content_juego = document.querySelector(".content-juego");
 let content = document.querySelector(".content-agregar");
@@ -182,6 +182,9 @@ function verificarLetra(params) {
     }
 }
 
+document.querySelector('#close').addEventListener('click',()=>{
+    document.querySelector('.modal-container').style.display = "none";
+})
 
 
 
