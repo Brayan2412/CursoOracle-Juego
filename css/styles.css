@@ -1,0 +1,341 @@
+body{
+    background:#CCCCCC;
+}
+
+header{
+    padding: 15px;
+    background: #282a35;
+}
+.caja{
+    padding: 3em 0;
+    width: auto;
+    margin: 0 25px ;
+}
+header img{
+    width: 30px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+header h2{
+    font-size:40px;
+    color: gainsboro;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 1em;
+}
+.texto-secundario{
+    color: darkgray;
+    font-size:20px;
+    font-weight: bold;
+}
+main{
+    padding:15px;
+    background: linear-gradient(#FEFEFE,#888888 );
+
+}
+.content-inicio{
+    position: relative;
+    left:25%;
+    max-width:50%;
+    min-width: 300px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height:600px;
+}
+.inicio{
+    position: relative;
+    text-align: center;
+    top: 25%;
+    width:250px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.boton,.boton-iniciar,.boton-agregar,.btn-nuevojuego,.btn-dsistir{
+    width:200px;
+    height:45px;
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+    font-size: 24px;
+    margin:15px auto;
+}
+.boton-iniciar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px; 
+}
+
+.boton-iniciar{
+    background:#0A3871;
+    color:white;
+    height:60px;
+}
+.boton-iniciar:hover{
+    background: #00234d;
+    transform: scale(1.20);
+}
+
+.content-juego{
+    position: relative;
+    left:25%;
+    max-width:40%;
+    min-width: 300px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height:600px;
+    background: #cccccc;
+    border: 1px solid rgba(136, 136, 136, 0.8);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.6);
+    display: none;
+}
+p{
+    position: relative;
+    left:35%;
+    font-size:24px;
+    color: green;
+    display:none;
+}
+.content-dibujo{
+    width:100%;
+    height:70%;
+}
+
+.control{
+    max-height: 30%;
+}
+.input-letras{
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 15px;
+}
+
+.inputs{
+    width:30px;
+    background:#cccccc;
+    color: #00234d;
+    font-size:18px;
+    border: none;
+    border-radius: 1.5px;
+    border-bottom: 3px solid blue;
+    color:green;
+    text-align:center;
+    margin:0 10px 0 0;
+    text-transform: uppercase;
+}
+.inputs:focus{
+    outline: none;
+}
+.letras-Incorrectas{
+
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    margin:10px 0
+}
+.btns-juego{
+    margin:5px;
+    text-align:center;
+}
+.btn-nuevojuego{
+    width: 180px;
+    height:30px;
+    background:#0A3871;
+    color:gainsboro;
+    margin: 0 2px 10px;
+    font-size:15px;
+
+}
+
+.btn-nuevojuego:hover{
+    background: #00234d;
+    transform: scale(1.20);
+}
+.btn-dsistir{
+    width: 180px;
+    height:30px;
+    margin: 0 2px 0;
+    font-size: 15px;
+}
+
+.btn-dsistir:hover{
+    background: white;
+    transform: scale(1.20);
+}
+
+.boton-agregar{
+    background:#FEFEFE;
+    color:black;
+}
+.boton-agregar:hover{
+    transform: scale(1.20);
+}
+.boton-agregar a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;    
+}
+
+
+.content-agregar{
+    position: relative;
+    top: 5%;
+    left:25%;
+    background: #CCCCCC;
+    max-width: 550px;
+    min-width: 300px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid rgba(136, 136, 136, 0.8);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.fa-sharp{
+    color:red;
+    font-size: 10px;
+    color:rgb(141, 138, 138)
+}
+.content-textarea{
+    border-bottom: 1px solid rgba(136, 136, 136, 0.6);
+    text-align: center;
+    margin-top: 10px;
+}
+#palabra{
+    width:280px;
+    background: #CCCCCC;
+    border: none;
+    resize: none;
+    color:#0A3871;
+    border-radius: 10px; 
+    font-size: 18px; 
+    padding: 15px;
+}
+#palabra:focus{
+    outline: none;
+}
+.content-btns{
+    max-width: 550px;
+    min-width: 300px;
+    text-align: center;
+    margin:20px 0 20px 0;
+    
+}
+
+.boton2,.btn-guardar,.btn-cancelar{
+    width:180px;
+    height:55px;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn-guardar{
+    background: #0A3871;
+    margin:0 5px;
+    color: white;
+}
+.btn-guardar:hover{
+    background: #00234d;
+    transform: scale(1.10);
+}
+
+.btn-cancelar{
+    background: white;
+    color: black;
+    margin:0 5px;
+
+}
+.btn-cancelar:hover{
+    background: #7d7d7d ;
+    transform: scale(1.10); 
+}
+
+footer{
+    text-align: center;
+    background: #888888;
+}
+
+footer div{
+    padding:40px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+button {
+  background-color: #47a386;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+.modal-container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+  
+}
+
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#mensaje{
+    margin: 10px;
+    font-size:24px;
+}
+
+
+@media screen and (max-width:480px) {
+    header{
+        width: auto;
+    }
+    header h2{
+        font-size:20px;
+    }
+    .caja{
+        width: auto;
+    }
+    .content-inicio{
+        left:0;
+    }
+    .content-agregar{
+        left:0;
+    }
+    .content-juego{
+        left:0;
+        margin: 0 auto;
+    }
+    .boton{
+        width:170px;
+        height:25px;
+    }
+    .boton2{
+        width:170px;
+        height:25px;
+    }
+}
+
+
+
