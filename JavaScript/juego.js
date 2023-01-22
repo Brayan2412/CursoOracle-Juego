@@ -90,10 +90,10 @@ function agregar() {
 }
 function guardar() {
     let palabra = (document.querySelector("#palabra").value).replace(/\s+/g, '');
-    
+    palabra = palabra.toUpperCase();
         palabras.push(palabra);
         pAleatoria=palabra;
-        
+        console.log(palabras);
         content.style.display = "none";
         content_inicio.style.display = "none";
         content_juego.style.display = "block";
@@ -102,7 +102,7 @@ function guardar() {
         agregarCajas();
         bloquearTeclas=true;
         activarEventoTeclas=true;
-
+    
 }
 
 
@@ -144,7 +144,7 @@ document.addEventListener(
                             bol = true;
                             palabraSeparada[i] = true;
                             x++;
-                            
+                            console.log(x);
                         }
                     }
                     if (!bol) {
@@ -153,7 +153,7 @@ document.addEventListener(
                         
                         bol = false;
                     }
-                    
+                    console.log('Cantidad = '+palabraSeparada.length);
                     if (x == palabraSeparada.length) {
                         document.querySelector(".modal-container").style.display = "flex";
                         document.querySelector("#mensaje").innerHTML='Fin del juego. Has ganado';
