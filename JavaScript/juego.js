@@ -102,7 +102,6 @@ function guardar() {
         agregarCajas();
         bloquearTeclas=true;
         activarEventoTeclas=true;
-    
 }
 
 
