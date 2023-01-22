@@ -90,7 +90,7 @@ function agregar() {
 }
 function guardar() {
     let palabra = (document.querySelector("#palabra").value).replace(/\s+/g, '');
-    if (palabra == palabra.toUpperCase()) {
+    palabra = palabra.toUpperCase();
         palabras.push(palabra);
         pAleatoria=palabra;
         console.log(palabras);
@@ -102,7 +102,7 @@ function guardar() {
         agregarCajas();
         bloquearTeclas=true;
         activarEventoTeclas=true;
-    }
+    
 }
 
 
